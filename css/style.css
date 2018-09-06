@@ -1,0 +1,421 @@
+/* 文字コードの指定
+------------------------------------------------------------*/
+@charset "UTF-8";
+
+/* Google Fonts用のCSSを読み込み
+------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Abel';
+body {
+    font-family: 'Abel', sans-serif;
+}
+html
+{
+    font-size: 62.5%; /* ベースとなるフォントサイズの定義 */
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; /* フォントの種類 */
+    font-size: 1.4rem; /* フォントサイズ */
+    line-height: 1.6; /* 行間 */
+
+    letter-spacing: .1em;　/* 文字間隔 */
+
+    color: #4c4c4c; /* 文字色 */
+    background-color: #eee7e0; /* 背景色 */
+}
+html /* root */
+{
+    font-size: 62.5%; /* =10px =100% */
+}
+
+body {
+ /* すべて14px
+------------------------------------------------------------*/
+    font-size: 14px;
+    font-size: 140%;
+    font-size: 1.4em;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 20px; /* そのまま20px */
+    font-size: 200%; /* 親要素bodyの14pxを基準に200% =28px */
+    font-size: 2em; /* 親要素bodyの14pxを基準に2倍 =28px */
+    font-size: 2rem; /* rootの10pxを基準に2倍 =20px */
+}
+
+div {
+    font-size: 12px; /* そのまま12px */
+    font-size: 120%; /* 親要素bodyの14pxを基準に120% =16.8px(約17px) */
+    font-size: 1.2em; /* 親要素bodyの14pxを基準に1.2倍 =16.8px(約17px) */
+    font-size: 1.2rem; /* rootの10pxを基準に1.2倍 =12px */
+}
+div p {
+    font-size: 12px; /* そのまま12px */
+    font-size: 120%; /* 親要素divの17pxを基準に120% =20.4px(約20px) */
+    font-size: 1.2em; /* 親要素divの17pxを基準に1.2倍 =20.4px(約20px) */
+    font-size: 1.2rem; /* rootの10pxを基準に1.2倍 =12px */
+}
+body {
+    color: #4c4c4c; /* 文字色 */
+    background-color: #eee7e0; /* 背景色 */
+}
+.button-contact
+{
+    font-size: 20px; /* フォントサイズ */
+    line-height: 0; /* 行の高さ */
+
+    display: block; /* ブロック要素のように扱う */
+    float: right; /* 要素を右寄せ */
+
+    width: 20px; /* 幅 */
+    height: 20px; /* 高さ */
+    margin: 20px 20px 0 0; /* 要素の外側の余白 */
+    padding: 10px; /* 要素の内側の余白 */
+
+    text-align: center; /* テキストの中央寄せ */
+
+    color: #4c4c4c; /* 文字色 */
+    border: 2px solid #4c4c4c; /* ボーダー */
+    -webkit-border-radius: 4px; /* 角丸 */
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.uppercase,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore
+{
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+.abel {
+    font-family: 'Abel', sans-serif; /* Google Fontsの指定 */
+}
+
+
+header .profile
+{
+    clear: both; /* 上のメールボタンのfloatを解除 */
+
+    width: 60%;
+    margin: 0 auto; /* ボックスを中央寄せ */
+    padding: 60px 0;
+}
+header .site-title
+{
+    font-size: 1.8rem;
+    line-height: normal;
+}
+header .site-title span
+{
+    font-size: 4.2rem;
+
+    display: block;
+
+    color: #434da2;
+}
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header .profile-icon
+{
+    margin: 30px auto;
+
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+header p
+{
+    font-size: 1.6rem;
+}
+section
+{
+    padding: 60px 0; /* section要素の余白を上下60pxで揃える */
+}
+section .container
+{
+    width: 90%; /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+}
+section h2
+{
+    font-size: 3.2rem;/* section要素見出しを32pxで揃える */
+}
+.block-center,
+section .container
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.abel,
+section h2
+{
+    font-family: 'Abel', sans-serif;
+}
+
+.uppercase,
+section h2
+{
+    text-transform: uppercase;
+}
+#skills
+{
+    background-color: #5f9ea0;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display:         flex;
+
+    justify-content: space-between;
+}
+#skills h2
+{
+    margin-bottom: 60px;
+    color: #fdfcf6;
+}
+#skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px;
+    padding: 20px;
+
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #eee7e0;
+}
+#skills i
+{
+    font-size: 4.5rem;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #434da2;
+}
+#skills h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #434da2;
+}
+.block-center,
+section .container,
+#skills i
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+#works
+{
+    padding-bottom: 0;
+}
+
+#works h2
+{
+    margin-bottom: 50px;
+}
+
+#works .works-box
+{
+    float: left;
+
+    width: 33.33333%;
+    height: 100%;
+}
+
+#works::after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+#works .works-box a
+{
+    position: relative;
+
+    display: block;
+}
+#works .works-box a .works-box-inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    height: 100%;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+#works .works-box a .works-box-inner div
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 40%;
+    margin: auto;
+    padding: 10px 20px;
+}
+#works .works-box a .works-box-inner h3
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin: 0 0 5px;
+}
+#works .works-box a .works-box-inner small
+{
+    font-size: 1rem;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+#works .works-box a .works-box-inner .button-readmore
+{
+    font-size: 1rem;
+    font-weight: bold;
+
+    display: block;
+
+    width: 180px;
+    margin: auto;
+    padding: 5px 0;
+
+    text-align: center;
+
+    color: #fff;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #434da2;
+}
+#works .works-box img
+{
+    display: block;
+
+    max-width: 100%;
+}
+.abel,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore
+{
+    font-family: 'Abel', sans-serif;
+}
+
+.uppercase,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner .button-readmore
+{
+    text-transform: uppercase;
+}
+#works .works-box a:hover .works-box-inner
+{
+    display: block;
+
+    width: 100%;
+}
+
+#works .works-box a .works-box-inner .button-readmore:hover
+{
+    background-color: #0f949b;
+}
+#contact ul
+{
+    margin-top: 60px;
+
+    text-align: center;
+}
+#contact ul li
+{
+    font-size: 2.8rem;
+
+    display: inline-block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-right: 20px;
+
+    text-align: center;
+    vertical-align: top;
+}
+#contact ul li:last-child
+{
+    margin-right: 0;
+}
+#contact ul .github,
+#contact ul .skype
+{
+    font-size: 3.2rem;
+}
+#contact ul .github i
+{
+    margin-left: 2px;
+}
+#contact ul a
+{
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #434da2;
+}
+#contact ul a:hover
+{
+    background-color: #434da2;
+}
+footer
+{
+    padding: 10px 0;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #5f9ea0;
+}
